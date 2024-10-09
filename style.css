@@ -1,3 +1,7 @@
+.navbar-toggler {
+  margin-right: 1rem;
+}
+
 
 .jumbotron {
     padding-top: 6rem;
@@ -16,15 +20,41 @@ margin-bottom: 3rem;
 }
 
 .topskills {
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
-    font-size: 3rem; 
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Membuat ikon turun ke baris berikutnya jika layar terlalu sempit */
+  justify-content: center;
+  gap: 20px; /* Menambahkan jarak antar ikon */
+  font-size: 3rem; /* Ukuran ikon */
+  padding: 20px 0;
+}
+
 .topskills i {
-    margin: 0 10px; 
+  margin: 10px; /* Memberi sedikit jarak di sekitar setiap ikon */
+}
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 576px) {
+  .topskills {
+    font-size: 2rem; /* Mengurangi ukuran ikon di layar kecil */
+    gap: 10px; /* Mengurangi jarak antar ikon di layar kecil */
   }
+
+  .topskills i {
+    margin: 5px; /* Mengurangi margin untuk menghemat ruang */
+  }
+}
+
+@media (max-width: 400px) {
+  .topskills {
+    font-size: 1rem; /* Mengurangi ukuran ikon di layar kecil */
+    gap: 7px; /* Mengurangi jarak antar ikon di layar kecil */
+  }
+
+  .topskills i {
+    margin: 5px; /* Mengurangi margin untuk menghemat ruang */
+  }
+}
+
   
 
 #projects {
